@@ -1,0 +1,1 @@
+powershell -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Click OK to visit OpenAI''s website.', 'Information'); start chrome 'https://www.openai.com'"

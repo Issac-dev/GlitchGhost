@@ -1,0 +1,83 @@
+1. Open Chrome with a URL:
+start chrome https://example.com
+
+
+2. Open Chrome in Incognito Mode:
+start chrome -incognito https://example.com
+
+
+3. Open Chrome with Developer Tools for a URL:
+start chrome --auto-open-devtools-for-tabs https://example.com
+
+
+4. Open Chrome and Disable Extensions:
+start chrome --disable-extensions https://example.com
+
+
+5. Open Chrome with a Specific Profile:
+start chrome --profile-directory="Profile 1" https://example.com
+
+
+6. Open Chrome in Kiosk Mode (Fullscreen without UI):
+start chrome --kiosk https://example.com
+
+
+7. Open Chrome in a New Window:
+start chrome --new-window https://example.com
+
+
+8. Open Chrome in Headless Mode (No UI, Used for Automation):
+start chrome --headless --disable-gpu --remote-debugging-port=9222 https://example.com
+
+
+9. Open Chrome and Clear Cache:
+start chrome --incognito --disable-cache https://example.com
+
+
+10. Open Chrome with Disabled Web Security (CORS bypass, for testing only):
+start chrome --disable-web-security --user-data-dir="C:/chrome_dev" https://example.com
+
+
+11. Open Chrome in App Mode (Looks like a standalone app):
+start chrome --app=https://example.com
+
+
+12. Open Chrome to Inspect Network Traffic:
+start chrome --auto-open-devtools-for-tabs --enable-logging https://example.com
+
+
+13. Open Chrome with Remote Debugging Enabled (for automation or external inspection):
+start chrome --remote-debugging-port=9222 https://example.com
+
+
+14. Open Chrome with a Specific File Path:
+start chrome "C:\path\to\file.html"
+
+
+15. Open Chrome with Multiple URLs in Separate Tabs:
+start chrome https://example1.com https://example2.com
+
+
+16. Open Chrome with Specific User-Agent:
+start chrome --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124" https://example.com
+
+
+17. Open Chrome in Print Preview Mode for a URL:
+start chrome --print-to-pdf https://example.com
+
+
+18. Open Chrome with Developer Mode and Emulate a Mobile Device:
+start chrome --auto-open-devtools-for-tabs --user-agent="Mozilla/5.0 (Linux; Android 10) Chrome/90.0" https://example.com
+
+
+19. Open Chrome with Disabled JavaScript:
+start chrome --disable-javascript https://example.com
+
+
+20. Open Chrome to a Blank Tab:
+start chrome about:blank
+
+
+21. Open Chrome to View Cookies for a URL:
+start chrome --auto-open-devtools-for-tabs https://example.com
+
