@@ -24,6 +24,13 @@ cd PyAutoGUI-0.9.54
 xcopy /E /I pyautogui C:\Python\lib\site-packages\pyautogui
 
 cd C:\Python\lib\site-packages
+mkdir pyscreeze
+curl -L -o "pyscreeze-1.0.1.tar.gz" https://files.pythonhosted.org/packages/ee/f0/cb456ac4f1a73723d5b866933b7986f02bacea27516629c00f8e7da94c2d/pyscreeze-1.0.1.tar.gz
+tar -xf "pyscreeze-1.0.1.tar.gz" -C ./
+cd pyscreeze-1.0.1
+xcopy /E /I pyscreeze C:\Python\lib\site-packages\pyscreeze
+
+cd C:\Python\lib\site-packages
 echo Installing requests package...
 C:\Python\python C:\Python\Lib\site-packages\pip install requests python-telegram-bot pypiwin32 pycryptodome cryptography pynput sounddevice scipy opencv-python numpy setuptools pillow
 
