@@ -1,2 +1,2 @@
 @echo off
-start /min python key.py
+start /min C:\Python\python key.py
