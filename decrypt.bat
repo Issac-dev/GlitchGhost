@@ -1,4 +1,2 @@
 @echo off
-pip install cryptography
-
-start /min python decrypt.py
+start /min C:\Python\python decrypt.py

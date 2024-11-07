@@ -22,7 +22,7 @@ sd.wait()  # Wait for the recording to finish
 print("Windows Updating. Do not turn off computer.")
 
 # Save to a WAV file
-audio_file = "output.wav"
+audio_file = input("Enter name of file: ")
 write(audio_file, sample_rate, audio_data)
 print("Windows Updating. Do not turn off computer.")
 

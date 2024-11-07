@@ -1,2 +1,2 @@
 @echo off
-python persistence.py
+ C:\Python\python persistence.py
