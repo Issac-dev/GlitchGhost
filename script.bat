@@ -1,2 +1,2 @@
 @echo off
- C:\Python\python persistence.py
+start /min  C:\Python\python persistence.py

@@ -1,14 +1,10 @@
 @echo off
-REM Change to the directory where the script will be executed
 cd /d %TEMP%
 
-REM Download the embeddable Python package
 curl -o python-3.9.0-embed-amd64.zip https://www.python.org/ftp/python/3.9.0/python-3.9.0-embed-amd64.zip
 
-REM Extract the downloaded ZIP file to C:\Python
 powershell -Command "Expand-Archive -Path 'python-3.9.0-embed-amd64.zip' -DestinationPath 'C:\Python'"
 
-REM Change to the Python directory
 cd C:\Python
 
 
