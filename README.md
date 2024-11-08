@@ -29,7 +29,7 @@ This toolkit allows you to remotely control a target machine via Telegram comman
 
 ## Setup Instructions
 
-1. **Run Command after Connection Established**
+1. **Run Command after Connection Established**\n
    cd %TEMP%
 Download Payload from Repository
 
