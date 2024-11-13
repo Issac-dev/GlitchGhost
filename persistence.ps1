@@ -16,4 +16,3 @@ while ($true) {
 
 # Exit the script
 exit
- 
