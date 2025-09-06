@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\mycmd]
+@="URL:My Custom Command"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\Software\Classes\mycmd\shell]
+
+[HKEY_CURRENT_USER\Software\Classes\mycmd\shell\open]
+
+[HKEY_CURRENT_USER\Software\Classes\mycmd\shell\open\command]
+@="cmd.exe /d /c for /f \"tokens=1* delims=:\" %%a in (\"%1\") do powershell -NoProfile -Command \"Start-Process cmd.exe -ArgumentList '/k', ([uri]::UnescapeDataString('%%~b'))\""
